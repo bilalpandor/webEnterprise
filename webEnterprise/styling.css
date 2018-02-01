@@ -1,0 +1,474 @@
+body {
+    font-family: 'Cabin', sans-serif;
+    font-size: 2.25em;
+    background-color: #0099CC;
+    color: white;
+}
+
+.classWithPad {
+    margin: 10px;
+    padding: 10px;
+}
+
+.mycontainer {
+    width: 80%;
+    margin: 20px auto;
+}
+
+.container h1 {
+    font-size: 3em;
+    line-height: 100%;
+    text-align: center;
+    color: white;
+    margin-bottom: 30px;
+}
+
+.container h2 {
+    font-size: 2em;
+    line-height: 100%;
+    text-align: center;
+    color: white;
+}
+
+#backtotop {
+    position: fixed;
+    left: auto;
+    right: 20px;
+    top: auto;
+    bottom: 20px;
+    outline: none;
+    overflow: hidden;
+    color: white;
+    text-align: center;
+    background-color: black;
+    height: 60px;
+    width: 60px;
+    line-height: 60px;
+    font-size: 50px;
+    border: 2px solid black;
+    border-radius: 2px;
+    cursor: pointer;
+    transition: all 0.3s linear;
+    z-index: 999999;
+    opacity: 1;
+    display: none;
+
+    /* Safari */
+    -webkit-transform: rotate(-90deg);
+
+    /* Firefox */
+    -moz-transform: rotate(-90deg);
+
+    /* IE */
+    -ms-transform: rotate(-90deg);
+
+    /* Opera */
+    -o-transform: rotate(-90deg);
+
+    /* Internet Explorer */
+    filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+}
+
+#backtotop:hover {
+    background-color: #003688;
+    border: 2px solid black;
+}
+
+#backtotop.mcOut {
+    opacity: 0;
+}
+
+/*datepicker*/
+
+.datepicker {
+    margin-bottom: 20px;
+    text-align: center;
+    background: black;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+.datepicker a {
+    color: white;
+    text-decoration: none;
+    vertical-align: middle;
+    font-size: 1.5em;
+}
+
+/*card content*/
+
+.radius {
+    border-radius: 2px;
+}
+
+.shadowDepth1 {
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2),
+    0 1px 2px rgba(0, 0, 0, 0.4);
+}
+
+
+/**
+ * Card Styles
+ */
+
+.card {
+    background-color: #fff;
+    text-align: center;
+    /* margin-bottom: 1.6rem; */
+}
+
+.card__padding {
+    padding: 1.2rem;
+}
+
+.card__content {
+    position: relative;
+    height: 100%
+}
+
+/* card article */
+
+.card__article a {
+    text-decoration: none;
+    color: black;
+}
+
+.card__article p {
+    text-align: center;
+    text-decoration: none;
+    color: black;
+}
+
+/*radial progress bar*/
+
+.pie-wrapper,
+.pie-wrapper2,
+.pie-wrapper3,
+.pie-wrapper4 {
+    display: inline-block;
+    position: relative;
+    width: 200px;
+    height: 200px;
+    margin-left: 50%;
+    border: 10px solid #ddd;
+    border-radius: 50%;
+    margin: 0 auto;
+
+}
+
+.pie-wrapper .pie,
+.pie-wrapper4 .pie4 {
+    clip: rect(0, 200px, 200px, 0px);
+    height: 200px;
+    width: 200px;
+    margin: -10px 0 0 -10px;
+
+}
+
+.pie-wrapper .pie,
+.pie-wrapper2 .pie2,
+.pie-wrapper3 .pie3,
+.pie-wrapper4 .pie4 {
+    clip: rect(0, 200px, 200px, 0px);
+    height: 200px;
+    width: 200px;
+    margin: -10px 0 0 -10px;
+
+    -moz-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    filter: FlipH;
+    -ms-filter: "FlipH";
+}
+
+    {
+    clip: rect(0, 200px, 200px, 0px);
+    height: 200px;
+    width: 200px;
+    margin: -10px 0 0 -10px;
+
+    -moz-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    filter: FlipH;
+    -ms-filter: "FlipH";
+}
+
+/*
+.pie-wrapper2 .pie2 {
+  clip: rect(0, 200px, 200px, 0px);
+  height: 200px;
+  width: 200px;
+  margin: -10px 0 0 -10px;
+    
+}
+*/
+
+.pie-wrapper .pie .half-circle,
+.pie-wrapper2 .pie2 .half-circle,
+.pie-wrapper3 .pie3 .half-circle,
+.pie-wrapper4 .pie4 .half-circle {
+    border: 10px solid #003688;
+    clip: rect(0, 100px, 200px, 0);
+    height: 200px;
+    position: absolute;
+    width: 200px;
+    border-radius: 50%;
+}
+
+.pie-wrapper .label,
+.pie-wrapper2 .label,
+.pie-wrapper3 .label,
+.pie-wrapper4 .label {
+    position: absolute;
+    top: 12.5%;
+    right: 1%;
+    width: 180px;
+    height: 180px;
+    color: black;
+    cursor: default;
+    font-size: 2em;
+    line-height: 2.5em;
+    border-radius: 50%;
+
+}
+
+.pie-wrapper .shadow,
+.pie-wrapper2 .shadow,
+.pie-wrapper3 .shadow,
+.pie-wrapper4 .shadow {
+    width: 100%;
+    height: 100%;
+    border: 20px solid #bdc3c7;
+    border-radius: 50%;
+}
+
+/*
+.pie-wrapper2 .shadow {
+  width: 100%;
+  height: 100%;
+  border: 20px solid #bdc3c7;
+  border-radius: 50%;
+}
+*/
+
+.pie-wrapper.progress-full .pie {
+    clip: inherit;
+}
+
+.pie-wrapper.progress-full .pie .right-side {
+    display: block;
+    -webkit-transform: rotate(220deg);
+    -moz-transform: rotate(220deg);
+    transform: rotate(340deg);
+}
+
+.pie-wrapper2.progress-full2 .pie2 .right-side2 {
+    display: block;
+    -webkit-transform: rotate(250deg);
+    -moz-transform: rotate(250deg);
+    transform: rotate(250deg);
+}
+
+.pie-wrapper3.progress-full3 .pie3 .right-side3 {
+    display: block;
+    -webkit-transform: rotate(200deg);
+    -moz-transform: rotate(200deg);
+    transform: rotate(270deg);
+}
+
+.pie-wrapper4.progress-full4 .pie4 .right-side4 {
+    display: block;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    transform: rotate(0deg);
+}
+
+div,
+div:before,
+div:after {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+/*line chart*/
+
+.morris-hover {
+    position: absolute;
+    z-index: 1000;
+}
+
+.morris-hover.morris-default-style {
+    border-radius: 10px;
+    padding: 6px;
+    color: #666;
+    background: rgba(255, 255, 255, 0.8);
+    border: solid 2px rgba(230, 230, 230, 0.8);
+    font-family: sans-serif;
+    font-size: 12px;
+    text-align: center;
+}
+
+.morris-hover.morris-default-style .morris-hover-row-label {
+    font-weight: bold;
+    margin: 0.25em 0;
+}
+
+.morris-hover.morris-default-style .morris-hover-point {
+    white-space: nowrap;
+    margin: 0.1em 0;
+}
+
+svg {
+    width: 100%;
+}
+
+#logincard {
+    margin: 0 auto;
+}
+
+.card__optionsbtn {
+    float: right;
+}
+
+/*Table for Steps last week*/
+
+.steps_table {
+    width: 100%;
+    color: black;
+    border-style: hidden;
+    border-color: white;
+}
+
+.td_goalreached {
+    background-color: #003688;
+    color: white;
+    width: 40%;
+}
+
+.td_almostthere {
+    background-color: #003688;
+    color: white;
+    display: block;
+    width: 90%;
+}
+
+tr:nth-child(even) {
+    border-top-style: solid;
+    border-top-color: #dddddd;
+    border-bottom-style: solid;
+    border-bottom-color: #dddddd;
+}
+
+/*Table for Music*/
+
+.music_table {
+    width: 100%;
+    color: black;
+    border-style: hidden;
+    border-color: white;
+}
+
+/*Social links*/
+
+/*
+#sociallinks_menu {
+	background-color: #FFF;}*/
+
+.soc {
+    display: block;
+    font-size: 0;
+    list-style: none;
+    margin: 0;
+    text-align: center;
+    padding: 0;
+}
+
+.soc li {
+    display: inline-block;
+    margin: 1.2rem;
+}
+
+.soc a,
+.soc svg {
+    display: block;
+}
+
+.soc a {
+    position: relative;
+    height: 50px;
+    height: 5.0rem;
+    width: 50px;
+    width: 5.0rem;
+}
+
+.soc svg {
+    height: 100%;
+    width: 100%;
+}
+
+.soc em {
+    font-size: 14px;
+    line-height: 1.5;
+    margin-top: -0.75em;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.icon-facebook,
+.icon-instagram,
+.icon-linkedin,
+.icon-snapchat,
+.icon-twitter,
+.icon-youtube {
+    color: #fff;
+    fill: #fff;
+    border-radius: 100%;
+    transition: background-color 0.5s, -webkit-transform 0.5s ease-out;
+    transition: background-color 0.5s, transform 0.5s ease-out;
+    transition: background-color 0.5s, transform 0.5s ease-out, -webkit-transform 0.5s ease-out;
+    -webkit-transition: background-color 0.5s, -webkit-transform 0.5s ease-out;
+}
+
+.icon-facebook:hover,
+.icon-instagram:hover,
+.icon-linkedin:hover,
+.icon-snapchat:hover,
+.icon-twitter:hover,
+.icon-youtube:hover {
+    color: #fff;
+    fill: #fff;
+    -webkit-transform: scale(1.25);
+    transform: scale(1.25);
+}
+
+.icon-facebook:hover {
+    background: #3b5998;
+}
+
+.icon-instagram:hover {
+    background: #bc2a8d;
+}
+
+.icon-linkedin:hover {
+    background: #0077b5;
+}
+
+.icon-snapchat:hover {
+    background: #FFAB00;
+}
+
+.icon-twitter:hover {
+    background: #00aced;
+}
+
+.icon-youtube:hover {
+    background: #e52d27;
+}
