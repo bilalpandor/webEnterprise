@@ -9,6 +9,8 @@ namespace webEnterprise.Models
     {
         private Boolean thumbRating;
         private User ratingAuthor;
+        private Idea ideaRated;
+
 
         public bool ThumbRating
         {
@@ -36,10 +38,25 @@ namespace webEnterprise.Models
             }
         }
 
-        public Rating(bool thumbRating, User ratingAuthor)
+        public Idea IdeaRated {
+            get
+            {
+                return ideaRated;
+            }
+
+            set
+            {
+                ideaRated = value;
+            }
+        }
+
+
+        public Rating(bool thumbRating, User ratingAuthor, Idea ideaRated)
         {
             this.ThumbRating = thumbRating;
             this.RatingAuthor = ratingAuthor;
+            this.IdeaRated = ideaRated;
+
         }
 
         public void SubmitRating()

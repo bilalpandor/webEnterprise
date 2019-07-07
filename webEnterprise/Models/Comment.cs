@@ -10,6 +10,7 @@ namespace webEnterprise.Models
         private string commentText;
         private DateTime commentDate;
         private User commentAuthor;
+        private Idea commentIdea;
 
         public string CommentText
         {
@@ -50,11 +51,25 @@ namespace webEnterprise.Models
             }
         }
 
-        public Comment(string text, DateTime date, User user)
+        public Idea CommentIdea
+        {
+            get
+            {
+                return commentIdea;
+            }
+
+            set
+            {
+                commentIdea = value;
+            }
+        }
+
+        public Comment(string text, DateTime date, User user, Idea idea)
         {
             this.CommentText = text;
             this.CommentDate = date;
             this.CommentAuthor = user;
+            this.commentIdea = idea;
         }
 
         public void SubmitComment()

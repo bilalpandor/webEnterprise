@@ -1,0 +1,183 @@
+﻿
+
+<link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" />
+
+<head>
+    <style>
+        body {
+            background-color: #4599CC;
+        }
+
+        table {
+          
+            border-radius:25px;
+            width: 100%;
+        }
+
+        th, td {
+            padding: 10px;
+            text-align: left;
+            border-bottom: 1px solid;
+        }
+
+        th {
+            background-color: #f1f1f1;
+        }
+
+        tr:hover {
+            background-color: #f0ad4e;
+        }
+
+
+        .search-container button {
+            float: right;
+            padding: 6px 10px;
+            margin: 8px;
+            margin-bottom: 40px;
+            border: none;
+            cursor: pointer;
+        }
+
+        form.search input[type=submit]{
+            background-color: #f1f1f1;
+            width: 80%;
+            padding: 10px;
+            font-size:17px;
+            border: 1px solid gray;
+            float: left;
+        }
+
+        form.search button {
+            background: #4599CC;
+            color: white;
+            width: 20%;
+            padding: 10px;
+            font-size: 17px;
+            border: 1px solid gray;
+            border-left:none;
+            cursor: pointer;
+            float: left;
+        }
+
+        form.search button:hover {
+            background-color: #4090CC;
+        }
+
+        form.search::after {
+            content: "";
+            clear:both;
+            display:table;
+        }
+
+        .pagination a {
+            color:black;
+            float:left;
+            padding: 8px 16px;
+            text-decoration:none;
+            margin-top:20px;
+        }
+
+            .pagination a.active {
+                background-color: #f0ad4e;
+                color:white;
+                border-radius: 5px;
+            }
+
+            .pagination a:hover:not(.active) {
+                background-color: #ddd;
+                border-radius: 5px;
+            }
+        
+    </style>
+</head>
+
+<div style="text-align: center;">
+    <div style="padding: 20px 20px; color:white;">
+        <h1>View Ideas</h1>
+    </div>
+</div>
+
+    <div class="container">
+
+        <div class="row">
+            <div style="float:right;">
+                <form class="search">
+                    <input type="text" placeholder="Search ..." name="search" />
+                    <button type="submit">
+                        <i class="glyphicon glyphicon-search" ></i>
+                    </button>
+                </form>
+
+                <div>
+                    <a href="" class="btn btn-warning btn-lg" style="width:252px !important;">Export Ideas &raquo;</a>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="div-table">
+                <h2>Art</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>First Name</th>
+                            <th>Idea</th>
+                            <th>Date </th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Jon</td>
+                            <td>Electronic for one day</td>
+                            <td>15 September, 2018</td>
+                            <td colspan="2">
+                                <span class="glyphicon glyphicon-thumbs-up"></span>&emsp;<span class="glyphicon glyphicon-thumbs-down"></span>
+                                &emsp;<span class="glyphicon glyphicon-comment"></span>
+                            </td>
+                    </tbody>
+                </table>
+
+                <h2>Business</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>First Name</th>
+                            <th>Idea</th>
+                            <th>Date </th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Jon</td>
+                            <td>Business on IT</td>
+                            <td>18 September, 2018</td>
+                            <td colspan="2">
+                                <span class="glyphicon glyphicon-thumbs-up"></span>&emsp;<span class="glyphicon glyphicon-thumbs-down"></span>
+                                &emsp;<span class="glyphicon glyphicon-comment"></span>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="pagination">
+            <a href="#">&laquo;</a>
+            <a href="#" class="active">1</a>
+            <a href="#">2</a>
+            <a href="#">3</a>
+            <a href="#">4</a>
+            <a href="#">5</a>
+            <a href="#">&raquo;</a>
+        </div>
+    </div>
+
+
+    
+        <script>
+
+        </script>
+
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+

@@ -8,9 +8,11 @@ namespace webEnterprise.Models
     public class Department
     {
         private string departmentName;
+        private int id;
 
-        public Department(string departmentName)
+        public Department(int id, string departmentName)
         {
+            this.id = id;
             this.DepartmentName = departmentName;
         }
 
@@ -24,6 +26,19 @@ namespace webEnterprise.Models
             set
             {
                 departmentName = value;
+            }
+        }
+
+        public int Id
+        {
+            get
+            {
+                return id;
+            }
+
+            set
+            {
+                id = value;
             }
         }
 

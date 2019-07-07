@@ -11,7 +11,13 @@ namespace webEnterprise
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            if (Session["User"] == null)
+            {
+                ideas.Visible = false;
+                welcome.Visible = false;
+                outBtn.Visible = false;
+            }
+          
         }
     }
 }

@@ -8,7 +8,7 @@ namespace webEnterprise.Models
     public class QAManager : User
     {
 
-        public QAManager(string firstName, string surname, string email, string password, string idNumber, Department department) : base(firstName, surname, email, password, idNumber, department)
+        public QAManager(int idNumber, string firstName, string surname, string email, string password, Department department) : base(idNumber, firstName, surname, email, password, department)
         {
             this.FirstName = firstName;
             this.Surname = surname;

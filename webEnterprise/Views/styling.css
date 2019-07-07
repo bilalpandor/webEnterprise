@@ -1,0 +1,187 @@
+body {
+    font-family: 'Cabin', sans-serif;
+    font-size: 2.25em;
+    background-color: #0099CC;
+    color: white;
+}
+
+/* logo in nav bar (start) */
+
+.navbar-brand {
+    padding: 0px;
+}
+
+.navbar-brand > img {
+    height: 100%;
+    padding: 2px;
+    width: auto;
+}
+
+/* logo in nav bar (end) */
+
+/* browse file input (start) */
+
+.btn-file {
+    position: relative;
+    overflow: hidden;
+}
+
+.btn-file input[type=file] {
+    position: absolute;
+    top: 0;
+    right: 0;
+    min-width: 100%;
+    min-height: 100%;
+    font-size: 100px;
+    text-align: right;
+    filter: alpha(opacity=0);
+    opacity: 0;
+    background: red;
+    cursor: inherit;
+    display: block;
+}
+
+input[readonly] {
+    background-color: white !important;
+    cursor: text !important;
+}
+
+form-group {
+	color: black;
+}
+/* browse file input (end) */
+
+.classWithPad {
+    margin: 10px;
+    padding: 10px;
+}
+
+.mycontainer {
+    width: 80%;
+    margin: 20px auto;
+}
+
+.container h1 {
+    font-size: 3em;
+    line-height: 100%;
+    text-align: center;
+    color: white;
+    margin-bottom: 30px;
+}
+
+.container h2 {
+    font-size: 2em;
+    line-height: 100%;
+    text-align: center;
+    color: white;
+}
+
+#backtotop {
+    position: fixed;
+    left: auto;
+    right: 20px;
+    top: auto;
+    bottom: 20px;
+    outline: none;
+    overflow: hidden;
+    color: white;
+    text-align: center;
+    background-color: black;
+    height: 60px;
+    width: 60px;
+    line-height: 60px;
+    font-size: 50px;
+    border: 2px solid black;
+    border-radius: 2px;
+    cursor: pointer;
+    transition: all 0.3s linear;
+    z-index: 999999;
+    opacity: 1;
+    display: none;
+
+    /* Safari */
+    -webkit-transform: rotate(-90deg);
+
+    /* Firefox */
+    -moz-transform: rotate(-90deg);
+
+    /* IE */
+    -ms-transform: rotate(-90deg);
+
+    /* Opera */
+    -o-transform: rotate(-90deg);
+
+    /* Internet Explorer */
+    filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+}
+
+#backtotop:hover {
+    background-color: #003688;
+    border: 2px solid black;
+}
+
+#backtotop.mcOut {
+    opacity: 0;
+}
+
+/*card content*/
+.shadowDepth1 {
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2),
+    0 1px 2px rgba(0, 0, 0, 0.4);
+}
+
+
+/**
+ * Card Styles
+ */
+.card {
+    background-color: #fff;
+    border-radius: 10px;
+}
+.card__padding {
+    padding-top: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.card__padding h2, .card__padding p,  .card__article {
+    color: black;
+    text-decoration: none;
+}
+
+.card__padding hr {
+    background-color: black;
+    color: black;
+}
+
+/* hide 'Choose file' button */
+.file {
+    visibility: hidden;
+    position: absolute;
+}
+
+/* table */
+table {
+    table-layout: fixed;
+    border-collapse: collapse;
+    width: 100%;
+    color: black;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 5px;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+
+table .absorbing-column {
+    width: 100%;
+}
+
+.btn-huge{
+    padding:20px;
+}

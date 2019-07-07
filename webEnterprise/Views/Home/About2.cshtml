@@ -1,0 +1,80 @@
+﻿
+<link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" />
+
+<head>
+    <style>
+        *{
+            box-sizing:border-box;
+        }
+        body {
+            background-color:white;
+        }
+    </style>
+</head>
+
+
+<div style="text-align: center;">
+    <div style="padding:20px 20px;margin-bottom: 50px;  background-color: #4599CC;color:white">
+        <h1>Share your Ideas</h1>
+    </div>
+    <div class="div-center" style="padding:20px 20px;">
+        <form action="">
+            <div class="row">
+                <div class="column-25">
+                    <label for="forename">Name</label>
+                </div>
+                <div class="column-75">
+                    <input type="text" name="forename" placeholder="Your forename...">
+                </div>
+                <div class="column-25">
+                    <label for="category">Category</label>
+                </div>
+                <div class="column-75">
+                    <select id="category" name="category">
+                        <option value="Art">Art</option>
+                        <option value="Business">Business</option>
+                        <option value="Electronics">Electronics</option>
+                        <option value="Sport">Sport</option>
+                    </select>
+                </div>
+                <div class="column-25">
+                    <label for="file">File</label>
+                </div>
+                <div class="column-75">
+                    <input type="file" id="file" name="file" style="float:right;">
+                </div>
+                <div class="column-25">
+                    <label for="comment">Comment</label>
+                </div>
+                <div class="column-75">
+                    <textarea id="comment" name="comment" placeholder="Write some comments here..." style="height:200px;"></textarea>
+                </div>
+                <div class="column-25">
+                    
+                </div>
+                <div class="column-75">
+                    <label for="checkbox">Accepts Terms & Conditions</label><input type="checkbox" id="checkbox" name="checkbox">
+                </div>
+                <div class="column-25">
+                    
+                </div>
+                <div class="column-75">
+                    <label for="checkbox">Click here if you want to do an Anonymous submit?</label><input type="checkbox" id="checkbox" name="checkbox">
+                </div>
+                
+            </div>
+            <div class="form-group">
+                <div>
+                    <asp:a href="" class="btn btn-warning btn-lg" style="width:190px !important;">Share your Ideas &raquo;</asp:a>
+                </div>
+            </div> 
+        </form>
+    </div>
+</div>
+<script>
+
+</script>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+

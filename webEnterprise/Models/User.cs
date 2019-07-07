@@ -11,8 +11,46 @@ namespace webEnterprise.Models
         private string surname;
         private string email;
         private string password;
-        private string idNumber;
+        private int idNumber;
         private Department department;
+        private bool active;
+        private DateTime lastLogin;
+        private bool admin;
+        private bool qaMan;
+        private bool qaCoor;
+
+        public User(int idNumber, string firstName, string surname, string email, string password, Boolean active, DateTime lastLogin)
+        {
+            this.IdNumber = idNumber;
+            this.FirstName = firstName;
+            this.Surname = surname;
+            this.Email = email;
+            this.Password = password;
+            this.Active = active;
+            this.LastLogin = lastLogin;
+        }
+
+        public User(int idNumber, string firstName, string surname, string email, string password, Boolean active, DateTime lastLogin, Department department)
+        {
+            this.IdNumber = idNumber;
+            this.FirstName = firstName;
+            this.Surname = surname;
+            this.Email = email;
+            this.Password = password;
+            this.Active = active;
+            this.LastLogin = lastLogin;
+            this.Department = department;
+        }
+
+        public User(int idNumber, string firstName, string surname, string email, string password, Department department)
+        {
+            this.idNumber = idNumber;
+            this.firstName = firstName;
+            this.surname = surname;
+            this.email = email;
+            this.password = password;
+            this.department = department;
+        }
 
         public string FirstName
         {
@@ -66,7 +104,7 @@ namespace webEnterprise.Models
             }
         }
 
-        public string IdNumber
+        public int IdNumber
         {
             get
             {
@@ -92,22 +130,70 @@ namespace webEnterprise.Models
             }
         }
 
-        public User(string firstName, string surname, string email, string password)
+        public bool Active
         {
-            this.FirstName = firstName;
-            this.Surname = surname;
-            this.Email = email;
-            this.Password = password;
+            get
+            {
+                return active;
+            }
+
+            set
+            {
+                active = value;
+            }
         }
 
-        public User(string firstName, string surname, string email, string password, string idNumber, Department department)
+    
+        public DateTime LastLogin
         {
-            this.FirstName = firstName;
-            this.Surname = surname;
-            this.Email = email;
-            this.Password = password;
-            this.IdNumber = idNumber;
-            this.Department = department;
+            get
+            {
+                return lastLogin;
+            }
+
+            set
+            {
+                lastLogin = value;
+            }
+        }
+
+        public bool Admin
+        {
+            get
+            {
+                return admin;
+            }
+
+            set
+            {
+                admin = value;
+            }
+        }
+
+        public bool QaMan
+        {
+            get
+            {
+                return qaMan;
+            }
+
+            set
+            {
+                qaMan = value;
+            }
+        }
+
+        public bool QaCoor
+        {
+            get
+            {
+                return qaCoor;
+            }
+
+            set
+            {
+                qaCoor = value;
+            }
         }
 
         public void Login()
